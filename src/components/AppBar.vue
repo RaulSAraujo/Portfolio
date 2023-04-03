@@ -1,18 +1,17 @@
 <template>
   <v-app-bar>
     <v-app-bar-title>
-      <v-row no-gutters align="center">
-        <!-- <MyLogo /> -->
-        <!-- <IconBase iconName="flutter" :width="20" :height="50" :iconColor="red">
-          
-        </IconBase> -->
+      <v-row no-gutters>
+        <v-row no-gutters>
+          <MyLogo />
+        </v-row>
 
-        <span class="ml-2 text-subtitle-1" v-text="'<'"></span>
+        <!-- <span class="ml-2 text-subtitle-1" v-text="'<'"></span>
         <span class="text-h5 mx-1" v-text="'RA'"></span>
-        <span class="text-subtitle-1" v-text="'/>'"></span>
+        <span class="text-subtitle-1" v-text="'/>'"></span> -->
 
-        <v-spacer v-if="!useDisplay.xs"></v-spacer>
-        <v-btn-group v-if="!useDisplay.xs">
+        <!-- <v-spacer v-if="!useDisplay.xs" class="ml-n16"></v-spacer> -->
+        <v-btn-group v-if="!useDisplay.xs" >
           <v-btn variant="plain" @click="scrollToStart">Inicio</v-btn>
           <v-btn variant="plain" @click="scrollToAboutMe">Sobre mim</v-btn>
           <v-btn variant="plain" @click="scrollToProjects">Projetos</v-btn>
@@ -47,14 +46,9 @@
 
 <script>
 import { useDisplay } from "vuetify";
-import IconBase from "@/components/iconBase.vue";
-import IconFlutter from "@/assets/svg/IconFlutter.vue";
 import MyLogo from "@/assets/svg/myLogo.vue";
-
 export default {
   components: {
-    IconBase,
-    IconFlutter,
     MyLogo,
   },
   data() {
@@ -79,5 +73,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
