@@ -2,6 +2,11 @@
   <v-app-bar>
     <v-app-bar-title>
       <v-row no-gutters align="center">
+        <!-- <MyLogo /> -->
+        <!-- <IconBase iconName="flutter" :width="20" :height="50" :iconColor="red">
+          
+        </IconBase> -->
+
         <span class="ml-2 text-subtitle-1" v-text="'<'"></span>
         <span class="text-h5 mx-1" v-text="'RA'"></span>
         <span class="text-subtitle-1" v-text="'/>'"></span>
@@ -24,7 +29,7 @@
             <v-list-item @click="scrollToStart">
               <v-list-item-title>Inicio</v-list-item-title>
             </v-list-item>
-            <v-list-item  @click="scrollToAboutMe">
+            <v-list-item @click="scrollToAboutMe">
               <v-list-item-title>Sobre mim</v-list-item-title>
             </v-list-item>
             <v-list-item @click="scrollToProjects">
@@ -42,7 +47,16 @@
 
 <script>
 import { useDisplay } from "vuetify";
+import IconBase from "@/components/iconBase.vue";
+import IconFlutter from "@/assets/svg/IconFlutter.vue";
+import MyLogo from "@/assets/svg/myLogo.vue";
+
 export default {
+  components: {
+    IconBase,
+    IconFlutter,
+    MyLogo,
+  },
   data() {
     return {
       useDisplay: useDisplay(),
