@@ -1,9 +1,10 @@
 <template>
   <v-responsive>
     <v-toolbar
-      color="grey-darken-4"
+      color="background"
       width="100%"
       class="py-5 align-center justify-center"
+      border="md"
     >
       <v-row no-gutters justify="center">
         <span class="text-h2"> PROJETOS </span>

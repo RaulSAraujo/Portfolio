@@ -3,7 +3,7 @@
     <v-card
       :class="!useDisplay.xs ? 'ma-7 pa-4' : ''"
       rounded="xl"
-      color="rgb(0,0,0,0)"
+      color="background"
       elevation="0"
     >
       <v-row no-gutters align="center">
@@ -36,7 +36,7 @@
                 prepend-icon="mdi-linkedin"
                 variant="plain"
                 size="large"
-                height="https://www.linkedin.com/in/raulsaraujo/"
+                href="https://www.linkedin.com/in/raulsaraujo"
                 target="_blank"
                 >Linkedin</v-btn
               >

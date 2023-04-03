@@ -1,18 +1,19 @@
 <template>
   <div>
     <v-toolbar
-      color="grey-darken-4"
+      color="background"
       width="100%"
       class="py-5 align-center justify-center"
+      border="md"
     >
       <v-row no-gutters justify="center">
         <span class="text-h2"> HABILIDADES </span>
       </v-row>
     </v-toolbar>
 
-    <v-card width="100%" height="400" class="pa-5" color="black">
+    <v-card width="100%" height="400" class="pa-4" color="black">
       <v-row justify="center" class="mt-12">
-        <v-sheet color="black" :width="!useDisplay.smAndDown ? '20%' : '50%'">
+        <v-sheet color="black" :width="!useDisplay.smAndDown ? '300' : '200'">
           <v-row no-gutters justify="space-evenly">
             <v-col
               v-for="skill in skills"
@@ -38,7 +39,27 @@
           </v-row>
         </v-sheet>
 
-        <v-sheet :width="!useDisplay.smAndDown ? '30%' : '100%'" color="black">
+        <v-sheet
+          v-if="tab == undefined"
+          :width="!useDisplay.smAndDown ? '30%' : '100%'"
+          color="black"
+        >
+          <v-card flat color="black">
+            <v-card-text class="text-body-1 text-center">
+              {{
+                !useDisplay.xs
+                  ? "Passe o mouse por cima para saber mais sobre minhas habilidades."
+                  : "Selecione um icone para saber mais sobre minhas habilidades."
+              }}
+            </v-card-text>
+          </v-card>
+        </v-sheet>
+
+        <v-sheet
+          v-else
+          :width="!useDisplay.smAndDown ? '30%' : '100%'"
+          color="black"
+        >
           <v-window v-model="tab">
             <v-window-item
               v-for="skill in skills"
@@ -68,7 +89,7 @@ export default {
   data() {
     return {
       useDisplay: useDisplay(),
-      tab: "HTML",
+      tab: undefined,
       skills: [
         {
           value: "HTML",
@@ -107,8 +128,8 @@ export default {
           title: "GITHUB",
           text: "É uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git.",
           subtitle: "2 anos de experiência com esta tecnologia.",
-          icon: "mdi-git",
-          color: "red",
+          icon: "mdi-github",
+          color: "grey",
         },
         {
           value: "VUE JS",
