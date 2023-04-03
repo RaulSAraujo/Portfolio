@@ -17,7 +17,7 @@
       :height="!useDisplay.smAndDown ? '400' : ''"
       class="d-flex align-center"
     >
-      <v-row dense class="pa-8" align="center">
+      <v-row dense class="pa-2" align="center">
         <v-col
           v-for="project in projects"
           :key="project"
