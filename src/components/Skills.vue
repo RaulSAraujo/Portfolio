@@ -12,14 +12,14 @@
 
     <v-card width="100%" height="400" class="pa-5" color="black">
       <v-row justify="center" class="mt-12">
-        <v-sheet color="black" :width="!useDisplay.smAndDown ? '20%' : '100%'">
+        <v-sheet color="black" :width="!useDisplay.smAndDown ? '20%' : '50%'">
           <v-row no-gutters justify="space-evenly">
             <v-col
               v-for="skill in skills"
               :key="skill"
               cols="4"
-              sm="1"
-              md="3"
+              sm="4"
+              md="4"
               lg="4"
               xl="4"
             >
@@ -38,7 +38,7 @@
           </v-row>
         </v-sheet>
 
-        <v-sheet :width="!useDisplay.smAndDown ? '30%' : ''" color="black">
+        <v-sheet :width="!useDisplay.smAndDown ? '30%' : '100%'" color="black">
           <v-window v-model="tab">
             <v-window-item
               v-for="skill in skills"

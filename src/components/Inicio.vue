@@ -32,11 +32,29 @@
             >
 
             <v-card-actions>
-              <v-btn prepend-icon="mdi-linkedin" variant="plain" size="large"
+              <v-btn
+                prepend-icon="mdi-linkedin"
+                variant="plain"
+                size="large"
+                height="https://www.linkedin.com/in/raulsaraujo/"
+                target="_blank"
                 >Linkedin</v-btn
               >
-              <v-btn prepend-icon="mdi-github" variant="plain" size="large"
+              <v-btn
+                prepend-icon="mdi-github"
+                variant="plain"
+                size="large"
+                href="https://github.com/RaulSAraujo"
+                target="_blank"
                 >GitHub</v-btn
+              >
+              <v-btn
+                prepend-icon="mdi-gitlab"
+                variant="plain"
+                size="large"
+                href="https://gitlab.com/Raul.sAraujo"
+                target="_blank"
+                >GitLab</v-btn
               >
             </v-card-actions>
           </v-card>

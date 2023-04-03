@@ -92,7 +92,7 @@
         </v-card>
       </v-sheet>
     </v-img>
-    <v-card v-else width="100vw" elevation="0">
+    <v-card v-else width="100vw" elevation="0" color="black">
       <v-row no-gutters align="center">
         <v-col cols="12" sm="12" md="4" lg="3" xl="3">
           <v-img
