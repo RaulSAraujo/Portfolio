@@ -233,7 +233,7 @@
                   </v-row>
                   <v-row align="center" justify="center">
                     <p class="text-center">
-                      Possuo 1 anos de carreira profissional.
+                      Possuo 3 anos de carreira profissional.
                     </p>
                   </v-row>
                 </v-card>
