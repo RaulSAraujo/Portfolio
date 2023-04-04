@@ -61,7 +61,7 @@
 
 <script>
 import { useDisplay } from "vuetify";
-import IconBase from "@/components/IconBase.vue";
+import IconBase from "@/assets/svg/IconBase.vue";
 import IconFlutter from "@/assets/svg/IconFlutter.vue";
 export default {
   components: {
