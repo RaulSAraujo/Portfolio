@@ -2,7 +2,7 @@
   <v-app-bar>
     <v-app-bar-title>
       <v-row no-gutters>
-        <v-row no-gutters>
+        <v-row no-gutters style="min-width: 140px; max-width: 100px">
           <MyLogo />
         </v-row>
 
@@ -10,8 +10,8 @@
         <span class="text-h5 mx-1" v-text="'RA'"></span>
         <span class="text-subtitle-1" v-text="'/>'"></span> -->
 
-        <!-- <v-spacer v-if="!useDisplay.xs" class="ml-n16"></v-spacer> -->
-        <v-btn-group v-if="!useDisplay.xs" >
+        <v-spacer v-if="!useDisplay.xs" class="ml-n16"></v-spacer>
+        <v-btn-group v-if="!useDisplay.xs">
           <v-btn variant="plain" @click="scrollToStart">Inicio</v-btn>
           <v-btn variant="plain" @click="scrollToAboutMe">Sobre mim</v-btn>
           <v-btn variant="plain" @click="scrollToProjects">Projetos</v-btn>
@@ -73,4 +73,5 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+</style>

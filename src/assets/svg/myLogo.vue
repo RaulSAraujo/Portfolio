@@ -2,7 +2,7 @@
   <svg
     data-v-fde0c5aa=""
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 100 500 100"
+    viewBox="0 100 300 100"
     class="iconLeft"
   >
     <defs data-v-fde0c5aa=""><!----></defs>
