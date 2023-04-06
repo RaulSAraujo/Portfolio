@@ -7,7 +7,7 @@ https://raul-araujo-portfolio.vercel.app/
 
 Este Portfolio pessoal é uma aplicação web e mobile construida para divulgação de projetos pessoais.
 
-A aplicação consiste em uma apresentação pessoal seguida de projetos pessoais e minhas skills.
+A aplicação consiste em uma apresentação pessoal seguida de projetos pessoais e minhas habilidades.
 
 ## Layout mobile
 ![Mobile 1](https://github.com/RaulSAraujo/Portfolio/blob/main/src/assets/img/project/PageMobile1.jpg) 
