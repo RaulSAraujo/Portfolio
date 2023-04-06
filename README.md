@@ -32,26 +32,14 @@ A aplicação consiste em uma apresentação pessoal seguida de projetos pessoai
 
 # Como executar o projeto
 
-```bash
-# clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
-
-# entrar na pasta do projeto back end
-cd backend
-
-# executar o projeto
-./mvnw spring-boot:run
-```
 
 ## Front end web
-Pré-requisitos: npm / yarn
+Pré-requisitos: npm / yarn / pnpm
 
 ```bash
 # clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
+git clone https://github.com/RaulSAraujo/Portfolio.git
 
-# entrar na pasta do projeto front end web
-cd front-web
 
 # instalar dependências
 ## yarn
