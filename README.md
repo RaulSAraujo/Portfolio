@@ -10,12 +10,16 @@ Este Portfolio pessoal é uma aplicação web e mobile construida para divulgaç
 A aplicação consiste em uma apresentação pessoal seguida de projetos pessoais e minhas skills.
 
 ## Layout mobile
-![Mobile 1](https://github.com/acenelio/assets/raw/main/sds1/mobile1.png) ![Mobile 2](https://github.com/acenelio/assets/raw/main/sds1/mobile2.png)
+![Mobile 1](https://github.com/RaulSAraujo/Portfolio/blob/main/src/assets/img/project/PageMobile1.jpg) 
+![Mobile 2](https://github.com/RaulSAraujo/Portfolio/blob/main/src/assets/img/project/PageMobile2.jpg) 
+![Mobile 3](https://github.com/RaulSAraujo/Portfolio/blob/main/src/assets/img/project/PageMobile3.jpg)
 
 ## Layout web
-![Web 1](https://github.com/acenelio/assets/raw/main/sds1/web1.png)
+![Web 1](https://github.com/RaulSAraujo/Portfolio/blob/main/src/assets/img/project/page1.png)
 
-![Web 2](https://github.com/acenelio/assets/raw/main/sds1/web2.png)
+![Web 2](https://github.com/RaulSAraujo/Portfolio/blob/main/src/assets/img/project/page2.png)
+
+![Web 3](https://github.com/RaulSAraujo/Portfolio/blob/main/src/assets/img/project/page3.png)
 
 # Tecnologias utilizadas
 ## Front end
