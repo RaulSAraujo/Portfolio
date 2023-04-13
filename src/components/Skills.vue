@@ -1,62 +1,106 @@
 <template>
-  <div>
-    <v-toolbar color="background" width="100%" class="py-5 align-center justify-center" border="md">
+  <v-app>
+    <v-toolbar
+      color="background"
+      width="100%"
+      class="py-5 align-center justify-center"
+      border="md"
+    >
       <v-row no-gutters justify="center">
         <span class="text-h2"> HABILIDADES </span>
       </v-row>
     </v-toolbar>
 
-    <v-card width="100%" height="400" class="pa-4" color="black">
-      <v-row justify="center" class="mt-12">
-        <v-sheet color="black" :width="!useDisplay.smAndDown ? '300' : '200'">
-          <v-row no-gutters justify="space-evenly">
-            <v-col v-for="skill in skills" :key="skill" cols="4" sm="4" md="4" lg="4" xl="4">
-              <v-hover>
-                <template v-slot:default="{ isHovering, props }">
-                  <v-icon v-if="skill.icon != null" v-bind="props" :icon="skill.icon" size="60"
-                    :color="isHovering ? skill.color : undefined" @mouseenter="tab = skill.value">
-                  </v-icon>
+    <v-row align="center">
+      <v-card width="100%" height="500" class="pa-4" color="rgb(26, 25, 25)">
+        <v-row justify="center" class="mt-12">
+          <v-sheet
+            color="rgb(26, 25, 25)"
+            :width="!useDisplay.smAndDown ? '300' : '200'"
+          >
+            <v-row no-gutters justify="space-evenly">
+              <v-col
+                v-for="skill in skills"
+                :key="skill"
+                cols="6"
+                sm="6"
+                md="4"
+                lg="4"
+                xl="4"
+              >
+                <v-hover>
+                  <template v-slot:default="{ isHovering, props }">
+                    <v-icon
+                      v-if="skill.icon != null"
+                      v-bind="props"
+                      :icon="skill.icon"
+                      size="80"
+                      :color="isHovering ? skill.color : undefined"
+                      @mouseenter="tab = skill.value"
+                    >
+                    </v-icon>
 
-                  <IconBase v-else-if="skill.title == 'FLUTTER'" class="mt-n1" v-bind="props" iconName="Flutter"
-                    :width="40" :height="60" :color="isHovering ? skill.color : undefined" @mouseenter="tab = skill.value">
-                    <IconFlutter />
-                  </IconBase>
-                </template>
-              </v-hover>
-            </v-col>
-          </v-row>
-        </v-sheet>
+                    <IconBase
+                      v-else-if="skill.title == 'FLUTTER'"
+                      class="mt-n1"
+                      v-bind="props"
+                      iconName="Flutter"
+                      :width="60"
+                      :height="80"
+                      :color="isHovering ? skill.color : undefined"
+                      @mouseenter="tab = skill.value"
+                    >
+                      <IconFlutter />
+                    </IconBase>
+                  </template>
+                </v-hover>
+              </v-col>
+            </v-row>
+          </v-sheet>
 
-        <v-sheet v-if="tab == undefined" :width="!useDisplay.smAndDown ? '30%' : '100%'" color="black">
-          <v-card flat color="black">
-            <v-card-text class="text-body-1 text-center">
-              {{
-                !useDisplay.xs
-                ? "Passe o mouse por cima para saber mais sobre minhas habilidades."
-                : "Selecione um icone para saber mais sobre minhas habilidades."
-              }}
-            </v-card-text>
-          </v-card>
-        </v-sheet>
+          <v-sheet
+            v-if="tab == undefined"
+            :width="!useDisplay.smAndDown ? '30%' : '100%'"
+            color="rgb(26, 25, 25)"
+          >
+            <v-card flat color="rgb(26, 25, 25)">
+              <v-card-text class="text-body-1 text-center">
+                {{
+                  !useDisplay.xs
+                    ? "Passe o mouse por cima para saber mais sobre minhas habilidades."
+                    : "Selecione um icone para saber mais sobre minhas habilidades."
+                }}
+              </v-card-text>
+            </v-card>
+          </v-sheet>
 
-        <v-sheet v-else :width="!useDisplay.smAndDown ? '30%' : '100%'" color="black">
-          <v-window v-model="tab">
-            <v-window-item v-for="skill in skills" :key="skill" :value="skill.value">
-              <v-card flat color="black">
-                <v-card-title class="text-h4">{{ skill.title }}</v-card-title>
-                <v-card-subtitle class="mt-n2">{{
-                  skill.subtitle
-                }}</v-card-subtitle>
-                <v-card-text class="text-body-1">
-                  {{ skill.text }}
-                </v-card-text>
-              </v-card>
-            </v-window-item>
-          </v-window>
-        </v-sheet>
-      </v-row>
-    </v-card>
-  </div>
+          <v-sheet
+            v-else
+            :width="!useDisplay.smAndDown ? '30%' : '100%'"
+            color="rgb(26, 25, 25)"
+          >
+            <v-window v-model="tab">
+              <v-window-item
+                v-for="skill in skills"
+                :key="skill"
+                :value="skill.value"
+              >
+                <v-card flat color="rgb(26, 25, 25)">
+                  <v-card-title class="text-h4">{{ skill.title }}</v-card-title>
+                  <v-card-subtitle class="mt-n2">{{
+                    skill.subtitle
+                  }}</v-card-subtitle>
+                  <v-card-text class="text-body-1">
+                    {{ skill.text }}
+                  </v-card-text>
+                </v-card>
+              </v-window-item>
+            </v-window>
+          </v-sheet>
+        </v-row>
+      </v-card>
+    </v-row>
+  </v-app>
 </template>
 
 <script>
