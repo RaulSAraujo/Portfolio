@@ -136,6 +136,18 @@ export default {
             "https://front-3t5xttaqp-raulsaraujo.vercel.app/assets/Backgroud.6f70cb0d.png",
         },
         {
+          name: "Make a List",
+          sub: [
+            { text: "React.js", icon: "mdi-react", color: "blue" },
+            { text: "Chakra.ui", icon: "mdi-lightning-bolt", color: "cyan" },
+            { text: "Typescript", icon: "mdi-language-typescript", color: "blue" },
+          ],
+          text: "Crie listas de compras detalhadas, incluindo produtos, preços e locais de compra.",
+          url: "https://make-a-list.vercel.app/",
+          image:
+            "https://raw.githubusercontent.com/jpfalcuci/dsm3-projeto_integrador-make_a_list/main/.github/Web.png",
+        },
+        {
           name: "Em breve",
         },
       ],
